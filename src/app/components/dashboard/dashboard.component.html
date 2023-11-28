@@ -1,0 +1,20 @@
+<div class="dashboard">
+    <app-navbar></app-navbar>
+    <div>
+      <div class="sidebar" style="background-color: rgb(208, 216, 219);" [style.width]="isSidebarOpen ? '120px' : '0'">
+        <button class="toggle-button" (click)="toggleSidebar()" style="background-color: rgb(20, 91, 124); margin-top: 15px">&#9776;</button>
+        <ul>
+          <li><button style="color: black;" (click)="showCouponDetails()">Coupons</button></li>
+          <li style="margin-top: 400px; color: white; ">
+            <a (click)="logout()">
+              <span class="glyphicon glyphicon-log-in" style="background-color: rgb(7, 51, 71);"></span> Logout
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div style="margin-top: -620px;margin-left:58px; padding: 30px; width: 100%;" class="table" *ngIf="showCouponDetailsFlag">
+        <app-coupons></app-coupons>
+      </div>
+    </div>
+  </div>
+  

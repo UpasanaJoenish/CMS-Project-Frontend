@@ -1,0 +1,18 @@
+<nav class="navbar-inverse" color="primary">
+    <div class="container-fluid" style="background-color: rgb(86, 167, 204);">
+        <div class="navbar-header">
+            <a style="padding-left: 100px;" class="navbar-brand" href="#">
+                <h1 style="color: black;">Coupon Management System</h1>
+            </a>
+        </div>
+        <ul class="nav navbar-nav navbar-right" >
+            <li>
+                <div style="color: white; border: solid 1px white; border-radius: 10px; border-width:2px;margin-right: 10px; padding-left: 10px;" *ngIf="email">
+                    <p style="margin-left: 58px; margin-top: 10px;">Welcome </p>
+                    <p style="margin-right: 20px; margin-top: -15px;">{{ email }}</p>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+</nav>

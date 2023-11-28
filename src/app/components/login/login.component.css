@@ -1,0 +1,88 @@
+body {
+    font-family: 'Arial', sans-serif;
+background-image: url('../../../assets/joenishLogo.jpg');
+background-size: 30%; 
+background-position:top; 
+background-repeat: no-repeat; 
+margin: 0;
+padding: 0;
+
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .login-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+  }
+  
+  .login-container h1 {
+    text-align: center;
+    color:rgb(136, 136, 224);
+    font-weight: bold;
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .error-message {
+    font-size: 12px;
+  }
+  
+  .login-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .login-button:disabled {
+    background-color: #b0c4de;
+    cursor: not-allowed;
+  }
+  
+  .mt-3 {
+    margin-top: 15px;
+    text-align: center;
+  }
+  
+  .mt-3 a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .mt-3 a:hover {
+    text-decoration: underline;
+  }
+  
